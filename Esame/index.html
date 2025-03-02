@@ -13,47 +13,73 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <img class="navbar-brand" src="./Netflix_Logo_RGB.png" alt="Netflix Logo">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">TV Shows</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Movies</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Recently Added</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">My List</a></li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-search"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">KIDS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-bell"></i></a></li>
-                    <div class="log-in d-flex">
-                        <li class="nav-item"><a class="nav-link" href="#"><img src="./movies/1.png" alt="Profile"
-                                    class="rounded-circle" width="30"></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-caret-down-fill"></i></a></li>
-                    </div>
-                </ul>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <img class="navbar-brand" src="./Netflix_Logo_RGB.png" alt="Netflix Logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">TV Shows</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Movies</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Recently Added</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">My List</a></li>
+            </ul>
         </div>
-    </nav>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <!-- Cerca (Icona per desktop, testo per mobile) -->
+                <li class="nav-item d-none d-sm-block">
+                    <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+                </li>
+                <li class="nav-item d-block d-sm-none">
+                    <a class="nav-link" href="#">Cerca</a>
+                </li>
+
+                <!-- KIDS -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">KIDS</a>
+                </li>
+
+                <!-- Notifiche (Icona per desktop, testo per mobile) -->
+                <li class="nav-item d-none d-sm-block">
+                    <a class="nav-link" href="#"><i class="bi bi-bell"></i></a>
+                </li>
+                <li class="nav-item d-block d-sm-none">
+                    <a class="nav-link" href="#">Notifiche</a>
+                </li>
+
+                <!-- Profilo (Icona per desktop, testo per mobile) -->
+                <div class="log-in d-flex">
+                    <li class="nav-item d-none d-sm-block">
+                        <a class="nav-link" href="#"><img src="./movies/1.png" alt="Profile" class="rounded-circle" width="30"></a>
+                    </li>
+                    <li class="nav-item d-none d-sm-block">
+                        <a class="nav-link" href="#"><i class="bi bi-caret-down-fill"></i></a>
+                    </li>
+                    <!-- Testo per mobile -->
+                    <li class="nav-item d-block d-sm-none">
+                        <a class="nav-link" href="#">Profilo</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+</nav>
 
     <!-- TV Shows Filter -->
     <div class="container-fluid">
         <div class="row">
             <!-- Sinistra: Titolo e Bottone -->
-            <div class="col-md-6 d-flex">
+            <div class="col-6 col-md-6 d-flex align-items-center mb-3 mb-md-0">
                 <h2 class="me-3">TV Shows</h2>
-                <button class="btn-genres">Genres ▼ </button>
+                <button class="btn-genres">Genres<i class="bi bi-caret-down-fill"></i></button>
             </div>
 
             <!-- Destra: Icone -->
-            <div class="col-md-6 d-flex justify-content-end">
+            <div class="col-6 col-md-6 d-flex justify-content-end align-items-center">
                 <button class="btn me-2 filter-View">
                     <i class="bi bi-grid"></i>
                 </button>
@@ -64,275 +90,272 @@
         </div>
     </div>
 
-    <!-- Primo Carousel -->
-    <div id="rowCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <h3> Treding Now </h3>
-            <!-- Primo gruppo con 6 card -->
-            <div class="carousel-item active">
-                <div class="row">
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/1.png" class="card-img-top" alt="Show 1">
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/10.png" class="card-img-top" alt="Show 2">
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/11.png" class="card-img-top" alt="Show 3">
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/12.png" class="card-img-top" alt="Show 4">
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/13.png" class="card-img-top" alt="Show 5">
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/14.png" class="card-img-top" alt="Show 6">
-                        </div>
+<!-- Primo Carousel -->
+<div id="rowCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <h3> Trending Now </h3>
+        <!-- Primo gruppo con 6 card -->
+        <div class="carousel-item active">
+            <div class="row">
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/1.png" class="card-img-top" alt="Show 1">
                     </div>
                 </div>
-            </div>
-
-            <!-- Secondo gruppo con 6 card -->
-            <div class="carousel-item">
-                <div class="row">
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/15.png" class="card-img-top" alt="Show 7">
-                        </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/10.png" class="card-img-top" alt="Show 2">
                     </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/16.png" class="card-img-top" alt="Show 8">
-                        </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/11.png" class="card-img-top" alt="Show 3">
                     </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/17.png" class="card-img-top" alt="Show 9">
-                        </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/12.png" class="card-img-top" alt="Show 4">
                     </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/15.png" class="card-img-top" alt="Show 7">
-                        </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/13.png" class="card-img-top" alt="Show 5">
                     </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/16.png" class="card-img-top" alt="Show 8">
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/17.png" class="card-img-top" alt="Show 9">
-                        </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/14.png" class="card-img-top" alt="Show 6">
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Pulsanti di navigazione -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#rowCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-            <span class="visually-hidden">Precedente</span>
-        </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#rowCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-            <span class="visually-hidden">Successivo</span>
-        </button>
-    </div>
-    </div>
-
-    <!-- Secondo Carousel -->
-    <div id="row2Carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <h3> Watch It Again </h3>
-            <!-- Primo gruppo con 6 card -->
-            <div class="carousel-item active">
-                <div class="row">
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/17.png" class="card-img-top" alt="Show 1">
-                        </div>
+        <!-- Secondo gruppo con 6 card -->
+        <div class="carousel-item">
+            <div class="row">
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/15.png" class="card-img-top" alt="Show 7">
                     </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/16.png" class="card-img-top" alt="Show 2">
-                        </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/16.png" class="card-img-top" alt="Show 8">
                     </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/2.png" class="card-img-top" alt="Show 3">
-                        </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/17.png" class="card-img-top" alt="Show 9">
                     </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/3.png" class="card-img-top" alt="Show 4">
-                        </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/15.png" class="card-img-top" alt="Show 7">
                     </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/4.png" class="card-img-top" alt="Show 5">
-                        </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/16.png" class="card-img-top" alt="Show 8">
                     </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/13.png" class="card-img-top" alt="Show 6">
-                        </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/17.png" class="card-img-top" alt="Show 9">
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- Secondo gruppo con 6 card -->
-            <div class="carousel-item">
-                <div class="row">
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/5.png" class="card-img-top" alt="Show 7">
-                        </div>
+    <!-- Pulsanti di navigazione -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#rowCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Precedente</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#rowCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Successivo</span>
+    </button>
+</div>
+
+<!-- Secondo Carousel -->
+<div id="row2Carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <h3> Watch It Again </h3>
+        <!-- Primo gruppo con 6 card -->
+        <div class="carousel-item active">
+            <div class="row">
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/17.png" class="card-img-top" alt="Show 1">
                     </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/6.png" class="card-img-top" alt="Show 8">
-                        </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/16.png" class="card-img-top" alt="Show 2">
                     </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/7.png" class="card-img-top" alt="Show 9">
-                        </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/2.png" class="card-img-top" alt="Show 3">
                     </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/8.png" class="card-img-top" alt="Show 7">
-                        </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/3.png" class="card-img-top" alt="Show 4">
                     </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/9.png" class="card-img-top" alt="Show 8">
-                        </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/4.png" class="card-img-top" alt="Show 5">
                     </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/10.png" class="card-img-top" alt="Show 9">
-                        </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/13.png" class="card-img-top" alt="Show 6">
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Pulsanti di navigazione -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#row2Carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-            <span class="visually-hidden">Precedente</span>
-        </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#row2Carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-            <span class="visually-hidden">Successivo</span>
-        </button>
-    </div>
-    </div>
-
-    <!-- Terzo Carousel -->
-    <div id="row3Carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <h3> New Releases </h3>
-            <!-- Primo gruppo con 6 card -->
-            <div class="carousel-item active">
-                <div class="row">
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/1.png" class="card-img-top" alt="Show 1">
-                        </div>
+        <!-- Secondo gruppo con 6 card -->
+        <div class="carousel-item">
+            <div class="row">
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/5.png" class="card-img-top" alt="Show 7">
                     </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/5.png" class="card-img-top" alt="Show 2">
-                        </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/6.png" class="card-img-top" alt="Show 8">
                     </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/14.png" class="card-img-top" alt="Show 3">
-                        </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/7.png" class="card-img-top" alt="Show 9">
                     </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/15.png" class="card-img-top" alt="Show 4">
-                        </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/8.png" class="card-img-top" alt="Show 7">
                     </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/11.png" class="card-img-top" alt="Show 5">
-                        </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/9.png" class="card-img-top" alt="Show 8">
                     </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/10.png" class="card-img-top" alt="Show 6">
-                        </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/10.png" class="card-img-top" alt="Show 9">
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- Secondo gruppo con 6 card -->
-            <div class="carousel-item">
-                <div class="row">
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/4.png" class="card-img-top" alt="Show 7">
-                        </div>
+    <!-- Pulsanti di navigazione -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#row2Carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Precedente</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#row2Carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Successivo</span>
+    </button>
+</div>
+
+<!-- Terzo Carousel -->
+<div id="row3Carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <h3> New Releases </h3>
+        <!-- Primo gruppo con 6 card -->
+        <div class="carousel-item active">
+            <div class="row">
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/1.png" class="card-img-top" alt="Show 1">
                     </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/3.png" class="card-img-top" alt="Show 8">
-                        </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/5.png" class="card-img-top" alt="Show 2">
                     </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/2.png" class="card-img-top" alt="Show 9">
-                        </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/14.png" class="card-img-top" alt="Show 3">
                     </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/8.png" class="card-img-top" alt="Show 7">
-                        </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/15.png" class="card-img-top" alt="Show 4">
                     </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/9.png" class="card-img-top" alt="Show 8">
-                        </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/11.png" class="card-img-top" alt="Show 5">
                     </div>
-                    <div class="col-md-2">
-                        <div class="card">
-                            <img src="./movies/10.png" class="card-img-top" alt="Show 9">
-                        </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/10.png" class="card-img-top" alt="Show 6">
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Pulsanti di navigazione -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#row3Carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-            <span class="visually-hidden">Precedente</span>
-        </button>
+        <!-- Secondo gruppo con 6 card -->
+        <div class="carousel-item">
+            <div class="row">
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/9.png" class="card-img-top" alt="Show 7">
+                    </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/6.png" class="card-img-top" alt="Show 8">
+                    </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/7.png" class="card-img-top" alt="Show 9">
+                    </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/8.png" class="card-img-top" alt="Show 7">
+                    </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/12.png" class="card-img-top" alt="Show 8">
+                    </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <div class="card">
+                        <img src="./movies/17.png" class="card-img-top" alt="Show 9">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <button class="carousel-control-next" type="button" data-bs-target="#row3Carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-            <span class="visually-hidden">Successivo</span>
-        </button>
-    </div>
-    </div>
+    <!-- Pulsanti di navigazione -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#row3Carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Precedente</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#row3Carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Successivo</span>
+    </button>
+</div>
 
     <!-- Footer -->
     <footer class="footer text-white mt-5 py-4">
