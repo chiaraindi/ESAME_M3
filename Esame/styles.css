@@ -32,6 +32,20 @@ h2 {
     margin: 0 20px 15px;
 }
 
+.log-in {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.log-in:hover {
+    background-color: grey
+}
+
 /*Tv shows filters */
 .btn-genres {
     background-color: black;
@@ -45,6 +59,14 @@ h2 {
 .btn-genres:hover {
     background-color: white;
     color: black;
+}
+
+.dropdown-toggle:focus,
+.dropdown-toggle:active,
+.dropdown-toggle.show {
+    background-color: white !important;
+    color: black !important;
+    border-color: #ccc !important;
 }
 
 .filter-View {
