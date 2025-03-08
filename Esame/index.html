@@ -12,69 +12,79 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <img class="navbar-brand" src="./Netflix_Logo_RGB.png" alt="Netflix Logo">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">TV Shows</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Movies</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Recently Added</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">My List</a></li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <!-- Cerca (Icona per desktop, testo per mobile) -->
-                    <li class="nav-item d-none d-sm-block">
-                        <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
-                    </li>
-                    <li class="nav-item d-block d-sm-none">
-                        <a class="nav-link" href="#">Cerca</a>
-                    </li>
+    <!--Header-->
+    <section class="header">
+        <div class="header-bg-image vh-100 d-flex align-items-center justify-content-center text-white">
+            <h1>Testo sopra l'immagine</h1>
+        </div>
 
-                    <!-- Profilo (Icona per desktop, testo per mobile) -->
-                    <div class="dropdown d-none d-sm-block">
-                        <button class="btn btn-primary dropdown-toggle log-in d-flex justify-content-center align-content-center" type="button"
-                            id="dropdownNavButton" data-bs-toggle="dropdown" aria-expanded="false">
-                            <a class="nav-link" href="#"><img src="https://www.albertobregani.com/wp-content/uploads/2019/05/sdqh8051_bdm_ritratto_bn_nocorn-840x840.jpg" alt="Profile" class="rounded 2"
-                                    width="30"> <i class="bi bi-caret-down-fill"></i>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <img class="navbar-brand" src="./Netflix_Logo_RGB.png" alt="Netflix Logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">TV Shows</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Movies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Recently Added</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">My List</a></li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Cerca (Icona per desktop, testo per mobile) -->
+                        <li class="nav-item d-none d-sm-block">
+                            <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+                        </li>
+                        <li class="nav-item d-block d-sm-none">
+                            <a class="nav-link" href="#">Cerca</a>
+                        </li>
+
+                        <!-- Profilo (Icona per desktop, testo per mobile) -->
+                        <div class="dropdown d-none d-sm-block">
+                            <button
+                                class="btn btn-primary dropdown-toggle log-in d-flex justify-content-center align-content-center"
+                                type="button" id="dropdownNavButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link" href="#"><img
+                                        src="https://www.albertobregani.com/wp-content/uploads/2019/05/sdqh8051_bdm_ritratto_bn_nocorn-840x840.jpg"
+                                        alt="Profile" class="rounded 2" width="30"> <i
+                                        class="bi bi-caret-down-fill"></i>
                                 </a>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <li><a class="dropdown-item" href="#">Cambia Profilo Utente</a></li>
-                            <li><a class="dropdown-item" href="#">Impostazioni</a></li>
-                            <li><a class="dropdown-item" href="#">Log-out</a></li>
-                        </ul>
-                    </div>
-                    <!-- Testo per mobile -->
-                    <li class="nav-item d-block d-sm-none">
-                        <a class="nav-link" href="#">Profilo</a>
-                    </li>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Cambia Profilo Utente</a></li>
+                                <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+                                <li><a class="dropdown-item" href="#">Log-out</a></li>
+                            </ul>
+                        </div>
+                        <!-- Testo per mobile -->
+                        <li class="nav-item d-block d-sm-none">
+                            <a class="nav-link" href="#">Profilo</a>
+                        </li>
 
-                    <!-- KIDS -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">KIDS</a>
-                    </li>
+                        <!-- KIDS -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">KIDS</a>
+                        </li>
 
-                    <!-- Notifiche (Icona per desktop, testo per mobile) -->
-                    <li class="nav-item d-none d-sm-block">
-                        <a class="nav-link" href="#"><i class="bi bi-bell"></i></a>
-                    </li>
-                    <li class="nav-item d-block d-sm-none">
-                        <a class="nav-link" href="#">Notifiche</a>
-                    </li>
+                        <!-- Notifiche (Icona per desktop, testo per mobile) -->
+                        <li class="nav-item d-none d-sm-block">
+                            <a class="nav-link" href="#"><i class="bi bi-bell"></i></a>
+                        </li>
+                        <li class="nav-item d-block d-sm-none">
+                            <a class="nav-link" href="#">Notifiche</a>
+                        </li>
 
-                </ul>
+                    </ul>
+                </div>
             </div>
-        </div>
-        </div>
-    </nav>
+        </nav>
+
+    </section>
 
     <!-- TV Shows Filter -->
     <div class="container-fluid">

@@ -5,8 +5,27 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.header-bg-image {
+    background-image: url('https://movieplayer.net-cdn.it/t/images/2023/01/17/the-last-of-us-recensione-serie-tv-primo-episodio-1x01_jpg_1200x0_crop_q85.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
 .navbar {
-    background-color: black;
+    background-color: transparent !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+    position: fixed;
+    background: black !important;
 }
 
 .navbar-brand {
