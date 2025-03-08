@@ -13,17 +13,32 @@ body {
     height: 300px;
 }
 
+@media (max-width: 768px) { /* Su mobile */
+    .header-bg-image {
+        height: 40vh; /* Mantiene un'altezza proporzionata */
+    }
+    
+    .col-4, .col-8 {
+        flex: 1; /* Fa sì che entrambe le colonne abbiano larghezza proporzionale */
+    }
+
+    .top-ten h4 {
+        font-size: 1rem; /* Riduci il font se necessario */
+    }
+}
+
 .top-ten {
-margin-top: 30px;
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .top-ten h4 {
     margin-left: 15px;
-    }
+}
 
 .top-ten-icon {
     width: 30px;
+    height: auto;
 }
 
 .navbar {
@@ -76,6 +91,19 @@ h2 {
 
 .log-in:hover {
     background-color: grey
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dropdown-item {
+    color: white !important;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+    text-decoration: underline;
 }
 
 /*Tv shows filters */
